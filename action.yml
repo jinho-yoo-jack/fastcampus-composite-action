@@ -1,7 +1,7 @@
 name: 'Hello World'
 description: 'Greet someone'
 inputs:
-  who_to_greet:  # id of input
+  who-to-greet:  # id of input
     description: 'Who to greet'
     required: true
     default: 'World'
@@ -13,8 +13,7 @@ runs:
   using: "composite"
   steps:
     - name: Set Greeting
-      run: echo "Hello $INPUT_WHO_TO_GREET."
-#      run: echo "Hello ${{ inputs.who-to-greet }}."
+      run: echo "Hello ${{ inputs.who-to-greet }}."
       shell: bash
 
     - name: Random Number Generator
